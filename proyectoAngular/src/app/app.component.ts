@@ -41,7 +41,7 @@ export class AppComponent {
     baseMayor:10,
     baseMenor:10,
     altura:8,
-    imagen:'assets/trapecio.png'
+    imagen:'assets/trapecio-perimetro.jpg'
   
   }
 
@@ -53,7 +53,7 @@ export class AppComponent {
     diagonalMayor:10,
     diagonalMenor:10,
    
-    imagen:'assets/trapecio.png'
+    imagen:'assets/rombo.jpg'
   
   }
 }

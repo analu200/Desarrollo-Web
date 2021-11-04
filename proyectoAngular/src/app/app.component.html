@@ -13,7 +13,7 @@
   
 </div>
 
-<div style=" width: 30%; height: 500px;  background-color: papayawhip;">
+<div style=" width: 30%; height: 500px;  background-color: rgb(151, 238, 143);">
     <h2>AREA DEL RECTANGULO</h2>
     <h4>Estamos trabajando con un <span style="color: tomato;">{{ figura2.tipo }}</span></h4>
     <img src="{{ figura2.imagen }}">
@@ -26,10 +26,10 @@
 
 </div>
 
-<div style="  width: 30%; height: 500px;  background-color: papayawhip;">
+<div style="  width: 30%; height: 500px;  background-color: rgb(143, 208, 228);">
     <h2>AREA DEL TRAPECIO</h2>
     <h4>Estamos trabajando con un <span style="color: tomato;">{{ figura3.tipo }}</span></h4>
- 
+    <img src="{{ figura3.imagen }}">
     <h4>Su base mayor es: <span style="color: blueviolet;">{{ figura3.baseMayor }}</span></h4>
     <h4>Su base menor es: <span style="color: blueviolet;">{{ figura3.baseMenor }}</span></h4>
     <h4>Su altura es: <span style="color:chartreuse;">{{ figura3.altura }}</span></h4>
@@ -45,7 +45,7 @@
 <div style="  width: 30%; height: 500px;  background-color: papayawhip;">
     <h2>AREA DEL ROMBO</h2>
     <h4>Estamos trabajando con un <span style="color: tomato;">{{ figura4.tipo }}</span></h4>
-   
+    <img src="{{ figura4.imagen }}">
     <h4>Su Diagonal Mayor es: <span style="color: blueviolet;">{{ figura4.diagonalMayor }}</span></h4>
     <h4>Su Diagonal Menor es: <span style="color: blueviolet;">{{ figura4.diagonalMenor }}</span></h4>
     <h4>Su área es: <span style="color:green;">{{calcularAreaRombo(figura4.diagonalMayor,figura4.diagonalMenor) }}</span></h4>

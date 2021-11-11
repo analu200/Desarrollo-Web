@@ -1,0 +1,60 @@
+
+<body>
+
+<h1 style="color:#fff; text-align:center; font-size:30px ">AREAS DE LAS FIGURAS GEOMETRICAS</h1>
+<div style=" text-align:center;  background-color: papayawhip;">
+    <h2>AREA DEL TRIANGULO</h2>
+    <h4>Estamos trabajando con un <span style="color: tomato;">{{ figura.tipo }}</span></h4>
+    <img src="{{ figura.imagen }}">
+    <h4>Su base es: <span style="color: blueviolet;">{{ figura.base }}</span></h4>
+    <h4>Su altura es: <span style="color:chartreuse;">{{ figura.altura }}</span></h4>
+    <h4>Su área es: <span style="color:green;">{{ calcularAreaTriangulo(figura.base,figura.altura) }}</span></h4>
+    <label>Base:</label><input type="number" [(ngModel)]="figura.base">
+    <br>
+    <label>Altura:</label><input type="number" [(ngModel)]="figura.altura">
+  
+</div>
+
+<div style="text-align:center;  height: 20%; background-color: rgb(151, 238, 143);">
+    <h2>AREA DEL RECTANGULO</h2>
+    <h4>Estamos trabajando con un <span style="color: tomato;">{{ figura2.tipo }}</span></h4>
+    <img src="{{ figura2.imagen }}">
+    <h4>Su base es: <span style="color: blueviolet;">{{ figura2.base }}</span></h4>
+    <h4>Su altura es: <span style="color:chartreuse;">{{ figura2.altura }}</span></h4>
+    <h4>Su área es: <span style="color:green;">{{calcularAreaRectangulo(figura2.base,figura2.altura) }}</span></h4>
+    <label>Base:</label><input type="number" [(ngModel)]="figura2.base">
+    <br>
+    <label>Altura:</label><input type="number" [(ngModel)]="figura2.altura">
+
+</div>
+
+<div style=" text-align:center;   background-color: rgb(143, 208, 228);">
+    <h2>AREA DEL TRAPECIO</h2>
+    <h4>Estamos trabajando con un <span style="color: tomato;">{{ figura3.tipo }}</span></h4>
+    <img src="{{ figura3.imagen }}">
+    <h4>Su base mayor es: <span style="color: blueviolet;">{{ figura3.baseMayor }}</span></h4>
+    <h4>Su base menor es: <span style="color: blueviolet;">{{ figura3.baseMenor }}</span></h4>
+    <h4>Su altura es: <span style="color:chartreuse;">{{ figura3.altura }}</span></h4>
+    <h4>Su área es: <span style="color:green;">{{calcularAreaTrapecio(figura3.baseMayor,figura3.baseMenor,figura3.altura) }}</span></h4>
+    <label>Base mayor:</label><input type="number" [(ngModel)]="figura3.baseMayor">
+    <br>
+    <label>Base menor:</label><input type="number" [(ngModel)]="figura3.baseMenor">
+    <br>
+    <label>Altura:</label><input type="number" [(ngModel)]="figura3.altura">
+
+</div>
+
+<div style=" text-align:center; background-color: papayawhip;">
+    <h2>AREA DEL ROMBO</h2>
+    <h4>Estamos trabajando con un <span style="color: tomato;">{{ figura4.tipo }}</span></h4>
+    <img src="{{ figura4.imagen }}">
+    <h4>Su Diagonal Mayor es: <span style="color: blueviolet;">{{ figura4.diagonalMayor }}</span></h4>
+    <h4>Su Diagonal Menor es: <span style="color: blueviolet;">{{ figura4.diagonalMenor }}</span></h4>
+    <h4>Su área es: <span style="color:green;">{{calcularAreaRombo(figura4.diagonalMayor,figura4.diagonalMenor) }}</span></h4>
+    <label>Diagonal Mayor:</label><input type="number" [(ngModel)]="figura4.diagonalMayor">
+    <br>
+    <label>Diagonal Menor:</label><input type="number" [(ngModel)]="figura4.diagonalMenor">
+   
+
+</div>
+</body>
